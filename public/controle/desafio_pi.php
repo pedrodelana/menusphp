@@ -8,3 +8,5 @@ if ($pi == number_format(pi(), 2)){
 } else {
     echo "<br>Diferentes!";
 }
+
+echo '<br>Fim!';
