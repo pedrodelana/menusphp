@@ -42,12 +42,17 @@ var_dump(false XOR true);
 var_dump(false XOR false);
 
 echo "<p class='divisao'>EXEMPLO</p><hr>";
-$idade = 66;
+$idade = 65;
 $sexo = 'M';
 
-if ($idade >= 60 && $sexo === 'F') {
-    echo 'Pode se aposentar';
-} elseif($idade >=65 && $sexo === 'M'){
+$criterioHomem = ($idade >=65 && $sexo === 'M');
+$criterioMulher = ($idade >= 60 && $sexo === 'F');
+$atingiuCriterio = $criterioHomem || $criterioMulher;
+$pagouPrevidencia = true;
+
+$podeSeAposentar = $pagouPrevidencia && $atingiuCriterio;
+
+if ($podeSeAposentar) {
     echo 'Pode se aposentar';
 } else {
     echo 'Vai ter que trabalhar mais um pouco...';
