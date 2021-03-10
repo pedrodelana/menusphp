@@ -17,7 +17,16 @@
     <main class="principal">
         <div class="conteudo">
             <nav class="modulos">
-                <div class="modulo vermelho-escuro">
+                <div class="modulo azul-escuro">
+                <h3>8. Orientação à objeto</h3>
+                    <ul>
+                        <li><a href="exercicio.php?dir=classe_objetos&file=classe">Primeira Classe</a></li>
+                        <li><a href="exercicio.php?dir=classe_objetos&file=desafio_data">Desafio Classe Data</a></li>
+                        <li><a href="exercicio.php?dir=classe_objetos&file=construtor_destrutor">Construtor e Destrutor</a></li>
+                        <li><a href="exercicio.php?dir=classe_objetos&file=heranca">Herança</a></li>
+                    </ul>
+                </div> 
+                    <div class="modulo vermelho-escuro">
                     <h3>7. Funções</h3>
                     <ul>
                         <li><a href="exercicio.php?dir=funcoes&file=escopo">Função e Escopo</a></li>
@@ -29,6 +38,10 @@
                         <li><a href="exercicio.php?dir=funcoes&file=funcao_anonima">Função Anônima</a></li>
                         <li><a href="exercicio.php?dir=funcoes&file=closure_callable">Closure & Callable</a></li>
                         <li><a href="exercicio.php?dir=funcoes&file=recursividade">Recursividade</a></li>
+                        <li><a href="exercicio.php?dir=funcoes&file=desafio_recursividade">Desafio Recursividade</a></li>
+                        <li><a href="exercicio.php?dir=funcoes&file=retornando_funcao">Retornando Função</a></li>
+                        <li><a href="exercicio.php?dir=funcoes&file=map_filter">Map & Filter</a></li>
+                    </ul>
                 </div> 
                 <div class="modulo verde-escuro">
                     <h3>6. Repetições</h3>
