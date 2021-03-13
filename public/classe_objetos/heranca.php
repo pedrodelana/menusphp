@@ -41,6 +41,7 @@ class Usuario extends Pessoa {
     public function apresentar()
     {
         echo "@{$this->login}: {$this->nome}, {$this->idade} anos. <br>";
+        parent::apresentar();
     }
 }
 
