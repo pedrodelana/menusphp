@@ -1,0 +1,49 @@
+ 2021-03-13 21:43:42+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-13 21:43:42+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+ 2021-03-13 21:43:42+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-13 21:43:43+00:00 [Note] [Entrypoint]: Initializing database files
+ 2021-03-13 21:43:47+00:00 [Note] [Entrypoint]: Database files initialized
+ 2021-03-13 21:43:47+00:00 [Note] [Entrypoint]: Starting temporary server
+ 2021-03-13 21:43:47+00:00 [Note] [Entrypoint]: Waiting for server startup
+ 2021-03-13 21:43:48+00:00 [Note] [Entrypoint]: Temporary server started.
+ 2021-03-13 21:43:50+00:00 [Note] [Entrypoint]: Creating database database
+ 2021-03-13 21:43:50+00:00 [Note] [Entrypoint]: Creating user root
+ 2021-03-14 01:00:13+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-14 01:00:13+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+ 2021-03-14 01:00:13+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-14 16:40:54+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-14 16:40:54+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+ 2021-03-14 16:40:54+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-15 16:31:44+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-15 16:31:44+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+ 2021-03-15 16:31:44+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-16 15:00:22+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-16 15:00:22+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+ 2021-03-16 15:00:22+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-17 14:38:20+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-17 14:38:20+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+ 2021-03-17 14:38:20+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-17 23:00:51+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-17 23:00:51+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+ 2021-03-17 23:00:51+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-17 23:27:01+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-17 23:27:01+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+ 2021-03-17 23:27:01+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-18 15:04:35+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-18 15:04:35+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+ 2021-03-18 15:04:35+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-18 15:27:42+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-18 15:27:42+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+ 2021-03-18 15:27:42+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-19 16:36:28+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-19 16:36:29+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+ 2021-03-19 16:36:29+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-19 18:40:15+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-19 18:40:15+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+ 2021-03-19 18:40:15+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-19 18:53:00+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-19 18:53:00+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+ 2021-03-19 18:53:00+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-19 18:56:19+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
+ 2021-03-19 18:56:19+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+ 2021-03-19 18:56:19+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 5.7.33-1debian10 started.
