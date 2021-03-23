@@ -2,10 +2,11 @@
 
 <?php
 print_r($_FILES);
+echo '<br>';
 
 if($_FILES && $_FILES['arquivo'])
 {
-    $pastaUpload = '/home/pedrolana/';   
+    $pastaUpload = './img/';   
     $nomeArquivo = $_FILES['arquivo']['name'];
     $arquivo = $pastaUpload . $nomeArquivo;
     $tmp = $_FILES['arquivo']['tmp_name'];

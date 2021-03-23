@@ -3,7 +3,7 @@
 <?php
 require_once "conexao.php";
 
-$conexao = novaConexao(NULL);
+$conexao = novaConexao();
 $sql = 'CREATE DATABASE curso_php';
 
 $conexao->query($sql);

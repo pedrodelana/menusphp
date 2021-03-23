@@ -20,14 +20,16 @@ services:
       - "9000:9000"
     volumes:
       - ".:/var/www/html/" 
-      - "./php/php.ini:/usr/local/etc/php/conf.d/php.ini"
+      - "./php/php.ini:/usr/local/etc/php/php.ini"
   mysql:
     image: mysql:5.7
     container_name: mysql
     ports: 
       - "3307:3306"
     volumes: 
-      - mysql:/var/lib/mysql
+      - "./mysql/data:/var/lib/mysql"
+      - "./mysql/log:/var/log/mysql"
+      - "./mysql/conf:/etc/mysql/conf.d"
     environment: 
       MYSQL_DATABASE: 'database'
       MYSQL_USER: 'root'
