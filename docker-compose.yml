@@ -11,6 +11,9 @@ services:
     links:
       - php
       - mysql
+    networks:
+      - mysql-compose-network
+
   php:
     build:
       context: .
@@ -21,6 +24,9 @@ services:
     volumes:
       - ".:/var/www/html/" 
       - "./php/php.ini:/usr/local/etc/php/php.ini"
+    networks:
+      - mysql-compose-network
+
   mysql:
     image: mysql:5.7
     container_name: mysql
@@ -31,10 +37,18 @@ services:
       - "./mysql/log:/var/log/mysql"
       - "./mysql/conf:/etc/mysql/conf.d"
     environment: 
-      MYSQL_DATABASE: 'database'
-      MYSQL_USER: 'root'
-      MYSQL_PASSWORD: '12345'
-      MYSQL_ROOT_PASSWORD: '12345'
+      MYSQL_DATABASE: "database"
+      MYSQL_USER: "root"
+      MYSQL_PASSWORD: "12345"
+      MYSQL_ROOT_PASSWORD: "12345"
+    networks:
+      - mysql-compose-network
+
+networks:
+  mysql-compose-network:
+    driver: "bridge"
+
 volumes: 
   mysql:
+
 
