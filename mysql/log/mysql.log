@@ -1,0 +1,157 @@
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+2021-03-21T22:29:55.076567Z	    2 Connect	root@172.18.0.1 on  using TCP/IP
+2021-03-21T22:29:55.084190Z	    2 Query	show databases
+2021-03-21T22:29:55.085739Z	    3 Connect	root@172.18.0.1 on  using TCP/IP
+2021-03-21T22:29:55.097885Z	    3 Query	show databases
+2021-03-21T22:29:57.461490Z	    3 Query	use `performance_schema`
+2021-03-21T22:29:57.469237Z	    3 Query	SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'performance_schema' and TABLE_TYPE<>'VIEW' order by table_name
+2021-03-21T22:29:59.504068Z	    3 Query	use `mysql`
+2021-03-21T22:29:59.505876Z	    3 Query	SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'mysql' and TABLE_TYPE<>'VIEW' order by table_name
+2021-03-21T22:30:22.056498Z	    3 Query	select 1
+2021-03-21T22:30:22.059137Z	    3 Query	create database `curso_php` default character set = 'utf8mb4'
+2021-03-21T22:30:22.077207Z	    3 Query	show databases
+2021-03-21T22:34:07.459826Z	    3 Query	use `curso_php`
+2021-03-21T22:34:07.460782Z	    3 Query	SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'curso_php' and TABLE_TYPE<>'VIEW' order by table_name
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+2021-03-23T01:22:33.451260Z	    2 Connect	root@172.18.0.1 on  using TCP/IP
+2021-03-23T01:22:33.451234Z	    3 Connect	root@172.18.0.1 on  using TCP/IP
+2021-03-23T01:22:33.460965Z	    2 Query	show databases
+2021-03-23T01:22:33.461067Z	    3 Query	show databases
+2021-03-23T01:22:38.905998Z	    2 Query	use `curso_php`
+2021-03-23T01:22:38.915246Z	    2 Query	SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'curso_php' and TABLE_TYPE<>'VIEW' order by table_name
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+2021-03-23T16:15:33.123846Z	    3 Connect	root@172.18.0.1 on  using TCP/IP
+2021-03-23T16:15:33.125375Z	    2 Connect	root@172.18.0.1 on  using TCP/IP
+2021-03-23T16:15:33.129328Z	    2 Query	show databases
+2021-03-23T16:15:33.129328Z	    3 Query	show databases
+2021-03-23T16:15:33.150369Z	    3 Query	use `curso_php`
+2021-03-23T16:15:33.152076Z	    3 Query	SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'curso_php' and TABLE_TYPE<>'VIEW' order by table_name
+2021-03-23T16:15:47.063877Z	    3 Query	select 1
+2021-03-23T16:15:47.064993Z	    3 Query	create database `menu_php` default character set = 'utf8mb4'
+2021-03-23T16:15:47.072296Z	    3 Query	show databases
+2021-03-23T16:17:25.082989Z	    3 Query	show processlist
+2021-03-23T16:17:25.085656Z	    3 Query	show global VARIABLES
+2021-03-23T16:17:25.104775Z	    3 Query	show global status
+2021-03-23T16:17:25.125991Z	    3 Query	show global status
+2021-03-23T16:17:25.999096Z	    3 Query	show global status
+2021-03-23T16:17:26.999770Z	    3 Query	show global status
+2021-03-23T16:17:27.999721Z	    3 Query	show global status
+2021-03-23T16:17:28.999844Z	    3 Query	show global status
+2021-03-23T16:17:29.999762Z	    3 Query	show global status
+2021-03-23T16:17:30.999731Z	    3 Query	show global status
+2021-03-23T16:17:31.999734Z	    3 Query	show global status
+2021-03-23T16:17:32.999889Z	    3 Query	show global status
+2021-03-23T16:17:33.999704Z	    3 Query	show global status
+2021-03-23T16:17:34.999610Z	    3 Query	show global status
+2021-03-23T16:17:35.999724Z	    3 Query	show global status
+2021-03-23T16:17:36.999678Z	    3 Query	show global status
+2021-03-23T16:17:37.999473Z	    3 Query	show global status
+2021-03-23T16:17:38.999704Z	    3 Query	show global status
+2021-03-23T16:19:29.275816Z	    3 Quit	
+2021-03-23T16:19:29.279609Z	    7 Connect	root@172.18.0.1 on  using TCP/IP
+2021-03-23T16:19:29.290446Z	    7 Query	show databases
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+2021-03-23T16:54:07.509292Z	    2 Connect	root@172.20.0.1 on  using TCP/IP
+2021-03-23T16:54:07.511440Z	    2 Query	use `curso_php`
+2021-03-23T16:54:07.512269Z	    2 Query	DROP database curso_php
+2021-03-23T16:54:07.521774Z	    2 Query	show databases
+2021-03-23T17:47:51.013120Z	    3 Connect	root@php.menusphp_mysql-compose-network on menu_php using TCP/IP
+2021-03-23T17:47:51.014085Z	    3 Quit	
+2021-03-23T17:47:52.550585Z	    4 Connect	root@php.menusphp_mysql-compose-network on menu_php using TCP/IP
+2021-03-23T17:47:52.550728Z	    4 Quit	
+2021-03-23T17:48:22.097358Z	    5 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-03-23T17:48:56.306985Z	    6 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-03-23T17:49:14.495371Z	    7 Connect	root@php.menusphp_mysql-compose-network on menu_php using TCP/IP
+2021-03-23T17:49:14.495780Z	    7 Query	CREATE DATABASE curso_php
+2021-03-23T17:49:14.496303Z	    7 Quit	
+2021-03-23T17:57:50.820027Z	    8 Connect	root@php.menusphp_mysql-compose-network on  using TCP/IP
+2021-03-23T17:57:50.820380Z	    8 Query	CREATE DATABASE curso_php
+2021-03-23T17:57:50.820684Z	    8 Quit	
+2021-03-23T17:57:53.909271Z	    2 Query	show databases
+2021-03-23T17:57:53.910614Z	    2 Query	show databases
+2021-03-23T17:58:02.527577Z	    2 Query	use `curso_php`
+2021-03-23T17:58:02.528147Z	    2 Query	DROP database curso_php
+2021-03-23T17:58:02.535853Z	    2 Query	select 1
+2021-03-23T17:58:02.536345Z	    2 Query	show databases
+2021-03-23T19:48:00.470877Z	    9 Connect	root@php.menusphp_mysql-compose-network on  using TCP/IP
+2021-03-23T19:48:00.471301Z	    9 Query	CREATE DATABASE IF NOT EXISTS curso_php
+2021-03-23T19:48:00.471916Z	    9 Quit	
+2021-03-23T19:48:03.417397Z	    2 Query	show databases
+2021-03-23T20:26:32.756986Z	   10 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-03-23T20:26:32.758520Z	   10 Query	CREATE TABLE IF NOT EXISTS cadastro (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    nascimento DATE,
+    email VARCHAR(100) NOT NULL,
+    site VARCHAR(100),
+    filhos INT,
+    salario FLOAT
+    )
+2021-03-23T20:26:32.785689Z	   10 Quit	
+2021-03-23T20:26:38.295908Z	    2 Query	show databases
+2021-03-23T20:26:38.303413Z	    2 Query	show databases
+2021-03-23T20:26:39.444320Z	    2 Query	use `curso_php`
+2021-03-23T20:26:39.446460Z	    2 Query	SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'curso_php' and TABLE_TYPE<>'VIEW' order by table_name
+2021-03-23T20:26:41.624617Z	    2 Query	SELECT COLUMN_NAME name,DATA_TYPE simpleType,COLUMN_TYPE type,COLUMN_COMMENT comment,COLUMN_KEY `key`,IS_NULLABLE nullable,CHARACTER_MAXIMUM_LENGTH maxLength,COLUMN_DEFAULT defaultValue,EXTRA extra FROM information_schema.columns WHERE table_schema = 'curso_php' AND table_name = 'cadastro' ORDER BY ORDINAL_POSITION

@@ -1,0 +1,107 @@
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2021-03-21T22:29:57.479466Z
+# User@Host: root[root] @  [172.18.0.1]  Id:     3
+# Query_time: 0.015197  Lock_time: 0.005265 Rows_sent: 87  Rows_examined: 174
+use performance_schema;
+SET timestamp=1616365797;
+SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'performance_schema' and TABLE_TYPE<>'VIEW' order by table_name;
+# Time: 2021-03-21T22:29:59.534210Z
+# User@Host: root[root] @  [172.18.0.1]  Id:     3
+# Query_time: 0.028477  Lock_time: 0.000357 Rows_sent: 31  Rows_examined: 62
+use mysql;
+SET timestamp=1616365799;
+SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'mysql' and TABLE_TYPE<>'VIEW' order by table_name;
+# Time: 2021-03-21T22:34:07.461197Z
+# User@Host: root[root] @  [172.18.0.1]  Id:     3
+# Query_time: 0.000518  Lock_time: 0.000248 Rows_sent: 0  Rows_examined: 0
+use curso_php;
+SET timestamp=1616366047;
+SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'curso_php' and TABLE_TYPE<>'VIEW' order by table_name;
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2021-03-23T01:22:38.917141Z
+# User@Host: root[root] @  [172.18.0.1]  Id:     2
+# Query_time: 0.010279  Lock_time: 0.009147 Rows_sent: 0  Rows_examined: 0
+use curso_php;
+SET timestamp=1616462558;
+SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'curso_php' and TABLE_TYPE<>'VIEW' order by table_name;
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2021-03-23T16:15:33.152858Z
+# User@Host: root[root] @  [172.18.0.1]  Id:     3
+# Query_time: 0.001450  Lock_time: 0.000771 Rows_sent: 0  Rows_examined: 0
+use curso_php;
+SET timestamp=1616516133;
+SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'curso_php' and TABLE_TYPE<>'VIEW' order by table_name;
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2021-03-23T20:26:39.455147Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     2
+# Query_time: 0.009627  Lock_time: 0.001844 Rows_sent: 1  Rows_examined: 2
+use curso_php;
+SET timestamp=1616531199;
+SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'curso_php' and TABLE_TYPE<>'VIEW' order by table_name;
+# Time: 2021-03-23T20:26:41.625727Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     2
+# Query_time: 0.001253  Lock_time: 0.000588 Rows_sent: 7  Rows_examined: 14
+SET timestamp=1616531201;
+SELECT COLUMN_NAME name,DATA_TYPE simpleType,COLUMN_TYPE type,COLUMN_COMMENT comment,COLUMN_KEY `key`,IS_NULLABLE nullable,CHARACTER_MAXIMUM_LENGTH maxLength,COLUMN_DEFAULT defaultValue,EXTRA extra FROM information_schema.columns WHERE table_schema = 'curso_php' AND table_name = 'cadastro' ORDER BY ORDINAL_POSITION;
