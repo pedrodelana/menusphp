@@ -105,3 +105,570 @@ SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_incre
 # Query_time: 0.001253  Lock_time: 0.000588 Rows_sent: 7  Rows_examined: 14
 SET timestamp=1616531201;
 SELECT COLUMN_NAME name,DATA_TYPE simpleType,COLUMN_TYPE type,COLUMN_COMMENT comment,COLUMN_KEY `key`,IS_NULLABLE nullable,CHARACTER_MAXIMUM_LENGTH maxLength,COLUMN_DEFAULT defaultValue,EXTRA extra FROM information_schema.columns WHERE table_schema = 'curso_php' AND table_name = 'cadastro' ORDER BY ORDINAL_POSITION;
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2021-03-25T20:10:25.224553Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     4
+# Query_time: 0.001484  Lock_time: 0.000695 Rows_sent: 1  Rows_examined: 2
+use curso_php;
+SET timestamp=1616703025;
+SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'curso_php' and TABLE_TYPE<>'VIEW' order by table_name;
+# Time: 2021-03-25T20:10:25.228266Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     4
+# Query_time: 0.000590  Lock_time: 0.000294 Rows_sent: 7  Rows_examined: 14
+SET timestamp=1616703025;
+SELECT COLUMN_NAME name,DATA_TYPE simpleType,COLUMN_TYPE type,COLUMN_COMMENT comment,COLUMN_KEY `key`,IS_NULLABLE nullable,CHARACTER_MAXIMUM_LENGTH maxLength,COLUMN_DEFAULT defaultValue,EXTRA extra FROM information_schema.columns WHERE table_schema = 'curso_php' AND table_name = 'cadastro' ORDER BY ORDINAL_POSITION;
+# Time: 2021-03-25T20:10:29.360641Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     4
+# Query_time: 0.000296  Lock_time: 0.000124 Rows_sent: 1  Rows_examined: 2
+SET timestamp=1616703029;
+SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'curso_php' and TABLE_TYPE<>'VIEW' order by table_name;
+# Time: 2021-03-25T20:10:29.362999Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     4
+# Query_time: 0.000399  Lock_time: 0.000192 Rows_sent: 7  Rows_examined: 14
+SET timestamp=1616703029;
+SELECT COLUMN_NAME name,DATA_TYPE simpleType,COLUMN_TYPE type,COLUMN_COMMENT comment,COLUMN_KEY `key`,IS_NULLABLE nullable,CHARACTER_MAXIMUM_LENGTH maxLength,COLUMN_DEFAULT defaultValue,EXTRA extra FROM information_schema.columns WHERE table_schema = 'curso_php' AND table_name = 'cadastro' ORDER BY ORDINAL_POSITION;
+# Time: 2021-03-25T20:18:30.968301Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     4
+# Query_time: 0.000598  Lock_time: 0.000319 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1616703510;
+SELECT TABLE_NAME name FROM information_schema.VIEWS  WHERE TABLE_SCHEMA = 'curso_php';
+# Time: 2021-03-25T20:19:01.240277Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     4
+# Query_time: 0.000279  Lock_time: 0.000142 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1616703541;
+select * from cadastro;
+# Time: 2021-03-25T20:19:39.531923Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     4
+# Query_time: 0.000244  Lock_time: 0.000126 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1616703579;
+select * from cadastro;
+# Time: 2021-03-25T20:22:28.233932Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     4
+# Query_time: 0.000214  Lock_time: 0.000104 Rows_sent: 1  Rows_examined: 1
+SET timestamp=1616703748;
+select * from cadastro;
+# Time: 2021-03-25T20:23:26.576969Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     4
+# Query_time: 0.000282  Lock_time: 0.000128 Rows_sent: 2  Rows_examined: 2
+SET timestamp=1616703806;
+select * from cadastro;
+# Time: 2021-03-25T20:25:02.316240Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     4
+# Query_time: 0.000276  Lock_time: 0.000124 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1616703902;
+select * from cadastro;
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2021-04-03T15:28:41.039267Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:     2
+# Query_time: 0.012091  Lock_time: 0.011179 Rows_sent: 3  Rows_examined: 3
+use curso_php;
+SET timestamp=1617463721;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T15:32:36.145085Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:     3
+# Query_time: 0.000682  Lock_time: 0.000329 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617463956;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T15:33:25.605854Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:     4
+# Query_time: 0.000341  Lock_time: 0.000160 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617464005;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T15:33:40.335656Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:     5
+# Query_time: 0.000622  Lock_time: 0.000309 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617464020;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T15:34:37.574791Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:     6
+# Query_time: 0.000592  Lock_time: 0.000336 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617464077;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T15:35:03.847224Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:     7
+# Query_time: 0.000455  Lock_time: 0.000230 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617464103;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T15:36:15.684135Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     9
+# Query_time: 0.002311  Lock_time: 0.001138 Rows_sent: 1  Rows_examined: 2
+SET timestamp=1617464175;
+SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'curso_php' and TABLE_TYPE<>'VIEW' order by table_name;
+# Time: 2021-04-03T15:36:15.688949Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     9
+# Query_time: 0.000709  Lock_time: 0.000466 Rows_sent: 7  Rows_examined: 14
+SET timestamp=1617464175;
+SELECT COLUMN_NAME name,DATA_TYPE simpleType,COLUMN_TYPE type,COLUMN_COMMENT comment,COLUMN_KEY `key`,IS_NULLABLE nullable,CHARACTER_MAXIMUM_LENGTH maxLength,COLUMN_DEFAULT defaultValue,EXTRA extra FROM information_schema.columns WHERE table_schema = 'curso_php' AND table_name = 'cadastro' ORDER BY ORDINAL_POSITION;
+# Time: 2021-04-03T15:36:37.382544Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    10
+# Query_time: 0.000486  Lock_time: 0.000270 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617464197;
+SELECT id, nome, nascimento, email  FROM cadastro;
+# Time: 2021-04-03T15:38:51.115368Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    11
+# Query_time: 0.000402  Lock_time: 0.000230 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617464331;
+SELECT id, nome, nascimento, email  FROM cadastro;
+# Time: 2021-04-03T15:38:57.860443Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    12
+# Query_time: 0.000223  Lock_time: 0.000125 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617464337;
+SELECT id, nome, nascimento, email  FROM cadastro;
+# Time: 2021-04-03T15:40:19.615427Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    13
+# Query_time: 0.000502  Lock_time: 0.000261 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617464419;
+SELECT id, nome, nascimento, email  FROM cadastro;
+# Time: 2021-04-03T15:41:17.155512Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    14
+# Query_time: 0.000238  Lock_time: 0.000135 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617464477;
+SELECT id, nome, nascimento, email  FROM cadastro;
+# Time: 2021-04-03T15:41:28.057292Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    15
+# Query_time: 0.000493  Lock_time: 0.000276 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617464488;
+SELECT id, nome, nascimento, email  FROM cadastro;
+# Time: 2021-04-03T15:42:09.949634Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    16
+# Query_time: 0.000363  Lock_time: 0.000207 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617464529;
+SELECT id, nome, nascimento, email  FROM cadastro;
+# Time: 2021-04-03T16:38:25.297944Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     9
+# Query_time: 0.012779  Lock_time: 0.012293 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1617467905;
+SELECT TABLE_NAME name FROM information_schema.VIEWS  WHERE TABLE_SCHEMA = 'curso_php';
+# Time: 2021-04-03T16:38:32.330595Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     9
+# Query_time: 0.005878  Lock_time: 0.004528 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617467912;
+SELECT * FROM cadastro LIMIT 100;
+# Time: 2021-04-03T16:38:52.706963Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     9
+# Query_time: 0.000530  Lock_time: 0.000268 Rows_sent: 2  Rows_examined: 2
+SET timestamp=1617467932;
+SELECT * FROM cadastro LIMIT 100;
+# Time: 2021-04-03T16:38:52.707947Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     9
+# Query_time: 0.000235  Lock_time: 0.000108 Rows_sent: 2  Rows_examined: 2
+SET timestamp=1617467932;
+SELECT * FROM cadastro LIMIT 100;
+# Time: 2021-04-03T16:48:14.165535Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    18
+# Query_time: 0.000432  Lock_time: 0.000201 Rows_sent: 2  Rows_examined: 2
+SET timestamp=1617468494;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:48:25.900026Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    20
+# Query_time: 0.000421  Lock_time: 0.000170 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617468505;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:50:53.996741Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    21
+# Query_time: 0.000358  Lock_time: 0.000149 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617468653;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:52:40.666530Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    22
+# Query_time: 0.000385  Lock_time: 0.000158 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617468760;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:52:49.884054Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    23
+# Query_time: 0.000401  Lock_time: 0.000186 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617468769;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:52:50.460032Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    24
+# Query_time: 0.000428  Lock_time: 0.000210 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617468770;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:52:58.587073Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    25
+# Query_time: 0.000366  Lock_time: 0.000151 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617468778;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:52:58.946057Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    26
+# Query_time: 0.000344  Lock_time: 0.000142 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617468778;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:52:59.163322Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    27
+# Query_time: 0.000381  Lock_time: 0.000151 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617468779;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:53:40.612635Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    28
+# Query_time: 0.000370  Lock_time: 0.000150 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617468820;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:54:00.858625Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    29
+# Query_time: 0.000346  Lock_time: 0.000144 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617468840;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:54:11.197025Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    30
+# Query_time: 0.000656  Lock_time: 0.000154 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617468851;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:54:29.371992Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    31
+# Query_time: 0.000383  Lock_time: 0.000159 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617468869;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:55:56.594799Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    32
+# Query_time: 0.000379  Lock_time: 0.000153 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617468956;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:55:57.124618Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    33
+# Query_time: 0.000254  Lock_time: 0.000098 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617468957;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:56:35.762437Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    34
+# Query_time: 0.000426  Lock_time: 0.000193 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617468995;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:56:36.178855Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    35
+# Query_time: 0.000361  Lock_time: 0.000149 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617468996;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:56:51.091769Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    36
+# Query_time: 0.001051  Lock_time: 0.000163 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469011;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:57:41.287387Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    37
+# Query_time: 0.000199  Lock_time: 0.000085 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469061;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:57:41.970148Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    38
+# Query_time: 0.000164  Lock_time: 0.000073 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469061;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:58:33.872320Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    39
+# Query_time: 0.000226  Lock_time: 0.000119 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469113;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:58:34.479235Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    40
+# Query_time: 0.000175  Lock_time: 0.000074 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469114;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:58:39.057997Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    41
+# Query_time: 0.000373  Lock_time: 0.000157 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469119;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:58:59.750623Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    42
+# Query_time: 0.000202  Lock_time: 0.000098 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469139;
+SELECT id, nome, nascimento, email  FROM cadastro;
+# Time: 2021-04-03T16:59:04.342761Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    43
+# Query_time: 0.000441  Lock_time: 0.000185 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469144;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T16:59:39.875054Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    44
+# Query_time: 0.000469  Lock_time: 0.000188 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469179;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T17:00:12.035457Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    45
+# Query_time: 0.000391  Lock_time: 0.000154 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469212;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T17:00:31.351192Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    46
+# Query_time: 0.000222  Lock_time: 0.000101 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469231;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T17:00:32.579723Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    47
+# Query_time: 0.000190  Lock_time: 0.000081 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469232;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T17:00:54.868172Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    48
+# Query_time: 0.000452  Lock_time: 0.000181 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469254;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T17:01:07.219799Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    49
+# Query_time: 0.000405  Lock_time: 0.000178 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469267;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T17:01:23.310073Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    50
+# Query_time: 0.000425  Lock_time: 0.000182 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469283;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T17:01:57.461078Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    51
+# Query_time: 0.000510  Lock_time: 0.000182 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469317;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T17:02:10.619671Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    52
+# Query_time: 0.000514  Lock_time: 0.000208 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469330;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T17:03:57.689239Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    53
+# Query_time: 0.000362  Lock_time: 0.000168 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469437;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T17:04:49.356589Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    54
+# Query_time: 0.000326  Lock_time: 0.000145 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469489;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T17:06:29.750116Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    55
+# Query_time: 0.000444  Lock_time: 0.000174 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469589;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T17:06:34.474373Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    56
+# Query_time: 0.000508  Lock_time: 0.000263 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469594;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T17:06:36.483865Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    57
+# Query_time: 0.000189  Lock_time: 0.000083 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469596;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T17:06:38.182173Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    58
+# Query_time: 0.000317  Lock_time: 0.000142 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469598;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T17:08:31.948148Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    59
+# Query_time: 0.000447  Lock_time: 0.000192 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469711;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T17:08:36.033259Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    60
+# Query_time: 0.001364  Lock_time: 0.000188 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469716;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T17:08:39.364075Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    61
+# Query_time: 0.000436  Lock_time: 0.000167 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469719;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T17:10:42.323585Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    62
+# Query_time: 0.000450  Lock_time: 0.000175 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617469842;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T17:10:44.120648Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    63
+# Query_time: 0.000456  Lock_time: 0.000186 Rows_sent: 2  Rows_examined: 2
+SET timestamp=1617469844;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T18:05:09.752392Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     9
+# Query_time: 0.005092  Lock_time: 0.003234 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617473109;
+SELECT * FROM cadastro LIMIT 100;
+# Time: 2021-04-03T18:05:11.013773Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     9
+# Query_time: 0.000328  Lock_time: 0.000167 Rows_sent: 3  Rows_examined: 3
+SET timestamp=1617473111;
+SELECT * FROM cadastro LIMIT 100;
+# Time: 2021-04-03T18:05:57.490309Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     9
+# Query_time: 0.000326  Lock_time: 0.000129 Rows_sent: 4  Rows_examined: 4
+SET timestamp=1617473157;
+SELECT * FROM cadastro LIMIT 100;
+# Time: 2021-04-03T18:05:57.491631Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     9
+# Query_time: 0.000270  Lock_time: 0.000119 Rows_sent: 4  Rows_examined: 4
+SET timestamp=1617473157;
+SELECT * FROM cadastro LIMIT 100;
+# Time: 2021-04-03T18:06:57.571202Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     9
+# Query_time: 0.004907  Lock_time: 0.000102 Rows_sent: 6  Rows_examined: 6
+SET timestamp=1617473217;
+SELECT * FROM cadastro LIMIT 100;
+# Time: 2021-04-03T18:08:39.695808Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     9
+# Query_time: 0.000287  Lock_time: 0.000142 Rows_sent: 7  Rows_examined: 7
+SET timestamp=1617473319;
+SELECT * FROM cadastro LIMIT 100;
+# Time: 2021-04-03T18:08:55.076051Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    68
+# Query_time: 0.000420  Lock_time: 0.000185 Rows_sent: 7  Rows_examined: 7
+SET timestamp=1617473335;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T18:09:00.620310Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    69
+# Query_time: 0.000772  Lock_time: 0.000159 Rows_sent: 7  Rows_examined: 7
+SET timestamp=1617473340;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T18:09:06.053831Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    70
+# Query_time: 0.000414  Lock_time: 0.000155 Rows_sent: 6  Rows_examined: 6
+SET timestamp=1617473346;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T18:09:14.180289Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    71
+# Query_time: 0.000725  Lock_time: 0.000192 Rows_sent: 6  Rows_examined: 6
+SET timestamp=1617473354;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T18:09:21.087617Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.3]  Id:    72
+# Query_time: 0.000299  Lock_time: 0.000121 Rows_sent: 5  Rows_examined: 5
+SET timestamp=1617473361;
+SELECT * FROM cadastro;
+# Time: 2021-04-03T19:55:49.144434Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     9
+# Query_time: 0.000960  Lock_time: 0.000780 Rows_sent: 5  Rows_examined: 5
+SET timestamp=1617479749;
+SELECT * FROM cadastro LIMIT 100;
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2021-04-04T19:27:26.049553Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     6
+# Query_time: 0.001218  Lock_time: 0.000416 Rows_sent: 1  Rows_examined: 2
+use curso_php;
+SET timestamp=1617564446;
+SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'curso_php' and TABLE_TYPE<>'VIEW' order by table_name;
+# Time: 2021-04-04T19:27:26.055682Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     6
+# Query_time: 0.001167  Lock_time: 0.000671 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1617564446;
+SELECT TABLE_NAME name FROM information_schema.VIEWS  WHERE TABLE_SCHEMA = 'curso_php';
+# Time: 2021-04-04T19:27:26.063841Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     6
+# Query_time: 0.001489  Lock_time: 0.000708 Rows_sent: 7  Rows_examined: 14
+SET timestamp=1617564446;
+SELECT COLUMN_NAME name,DATA_TYPE simpleType,COLUMN_TYPE type,COLUMN_COMMENT comment,COLUMN_KEY `key`,IS_NULLABLE nullable,CHARACTER_MAXIMUM_LENGTH maxLength,COLUMN_DEFAULT defaultValue,EXTRA extra FROM information_schema.columns WHERE table_schema = 'curso_php' AND table_name = 'cadastro' ORDER BY ORDINAL_POSITION;
+# Time: 2021-04-04T19:27:29.498257Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     6
+# Query_time: 0.000779  Lock_time: 0.000383 Rows_sent: 0  Rows_examined: 0
+use menu_php;
+SET timestamp=1617564449;
+SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'menu_php' and TABLE_TYPE<>'VIEW' order by table_name;
+# Time: 2021-04-04T21:06:29.905968Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.2]  Id:    14
+# Query_time: 0.000573  Lock_time: 0.000311 Rows_sent: 6  Rows_examined: 6
+use curso_php;
+SET timestamp=1617570389;
+SELECT * FROM cadastro;
+# Time: 2021-04-04T21:06:37.679289Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.2]  Id:    16
+# Query_time: 0.000586  Lock_time: 0.000267 Rows_sent: 6  Rows_examined: 6
+SET timestamp=1617570397;
+SELECT * FROM cadastro;
+# Time: 2021-04-04T21:07:22.752642Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.2]  Id:    18
+# Query_time: 0.000349  Lock_time: 0.000172 Rows_sent: 6  Rows_examined: 6
+SET timestamp=1617570442;
+SELECT * FROM cadastro;
+# Time: 2021-04-04T21:16:02.736413Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.2]  Id:    20
+# Query_time: 0.000503  Lock_time: 0.000232 Rows_sent: 6  Rows_examined: 6
+SET timestamp=1617570962;
+SELECT * FROM cadastro;
+# Time: 2021-04-04T21:16:02.736918Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.2]  Id:    20
+# Query_time: 0.000289  Lock_time: 0.000112 Rows_sent: 2  Rows_examined: 5
+SET timestamp=1617570962;
+SELECT * FROM cadastro LIMIT 2 OFFSET 3;
+# Time: 2021-04-04T21:17:18.794965Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.2]  Id:    22
+# Query_time: 0.000405  Lock_time: 0.000157 Rows_sent: 6  Rows_examined: 6
+SET timestamp=1617571038;
+SELECT * FROM cadastro;
+# Time: 2021-04-04T21:18:02.818164Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.2]  Id:    24
+# Query_time: 0.000575  Lock_time: 0.000267 Rows_sent: 6  Rows_examined: 6
+SET timestamp=1617571082;
+SELECT * FROM cadastro;
+# Time: 2021-04-04T21:18:09.622676Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.2]  Id:    26
+# Query_time: 0.000464  Lock_time: 0.000225 Rows_sent: 6  Rows_examined: 6
+SET timestamp=1617571089;
+SELECT * FROM cadastro;
+# Time: 2021-04-04T21:18:09.623161Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.2]  Id:    26
+# Query_time: 0.000265  Lock_time: 0.000100 Rows_sent: 2  Rows_examined: 5
+SET timestamp=1617571089;
+SELECT * FROM cadastro LIMIT 2 OFFSET 3;
+# Time: 2021-04-04T21:18:19.459974Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.2]  Id:    28
+# Query_time: 0.000619  Lock_time: 0.000172 Rows_sent: 6  Rows_examined: 6
+SET timestamp=1617571099;
+SELECT * FROM cadastro;
+# Time: 2021-04-04T21:20:40.923779Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.2]  Id:    30
+# Query_time: 0.000185  Lock_time: 0.000078 Rows_sent: 6  Rows_examined: 6
+SET timestamp=1617571240;
+SELECT * FROM cadastro;
+# Time: 2021-04-04T21:20:40.923988Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.2]  Id:    30
+# Query_time: 0.000119  Lock_time: 0.000047 Rows_sent: 2  Rows_examined: 5
+SET timestamp=1617571240;
+SELECT * FROM cadastro LIMIT 2 OFFSET 3;
+# Time: 2021-04-04T21:22:25.817971Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.2]  Id:    32
+# Query_time: 0.000861  Lock_time: 0.000196 Rows_sent: 6  Rows_examined: 6
+SET timestamp=1617571345;
+SELECT * FROM cadastro;
+# Time: 2021-04-04T21:22:25.818737Z
+# User@Host: root[root] @ php.menusphp_mysql-compose-network [172.20.0.2]  Id:    32
+# Query_time: 0.000655  Lock_time: 0.000138 Rows_sent: 2  Rows_examined: 5
+SET timestamp=1617571345;
+SELECT * FROM cadastro LIMIT 2 OFFSET 3;
+# Time: 2021-04-04T21:29:49.296408Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     6
+# Query_time: 0.000263  Lock_time: 0.000122 Rows_sent: 6  Rows_examined: 6
+SET timestamp=1617571789;
+SELECT * FROM cadastro LIMIT 100;
+# Time: 2021-04-04T21:31:26.076994Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     6
+# Query_time: 0.000281  Lock_time: 0.000135 Rows_sent: 5  Rows_examined: 5
+SET timestamp=1617571886;
+SELECT * FROM cadastro LIMIT 100;
+# Time: 2021-04-04T21:31:26.078215Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     6
+# Query_time: 0.000236  Lock_time: 0.000104 Rows_sent: 5  Rows_examined: 5
+SET timestamp=1617571886;
+SELECT * FROM cadastro LIMIT 100;
+# Time: 2021-04-04T21:41:41.808476Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     6
+# Query_time: 0.000414  Lock_time: 0.000177 Rows_sent: 5  Rows_examined: 5
+SET timestamp=1617572501;
+SELECT * FROM cadastro LIMIT 100;
+# Time: 2021-04-04T21:42:00.451068Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     6
+# Query_time: 0.000312  Lock_time: 0.000147 Rows_sent: 5  Rows_examined: 5
+SET timestamp=1617572520;
+SELECT * FROM cadastro LIMIT 100;
+# Time: 2021-04-04T21:42:00.452295Z
+# User@Host: root[root] @  [172.20.0.1]  Id:     6
+# Query_time: 0.000283  Lock_time: 0.000127 Rows_sent: 5  Rows_examined: 5
+SET timestamp=1617572520;
+SELECT * FROM cadastro LIMIT 100;

@@ -155,3 +155,850 @@ Time                 Id Command    Argument
 2021-03-23T20:26:39.444320Z	    2 Query	use `curso_php`
 2021-03-23T20:26:39.446460Z	    2 Query	SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'curso_php' and TABLE_TYPE<>'VIEW' order by table_name
 2021-03-23T20:26:41.624617Z	    2 Query	SELECT COLUMN_NAME name,DATA_TYPE simpleType,COLUMN_TYPE type,COLUMN_COMMENT comment,COLUMN_KEY `key`,IS_NULLABLE nullable,CHARACTER_MAXIMUM_LENGTH maxLength,COLUMN_DEFAULT defaultValue,EXTRA extra FROM information_schema.columns WHERE table_schema = 'curso_php' AND table_name = 'cadastro' ORDER BY ORDINAL_POSITION
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+2021-03-25T20:10:16.942191Z	    2 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-03-25T20:10:16.943911Z	    2 Query	CREATE TABLE IF NOT EXISTS cadastro (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    nascimento DATE,
+    email VARCHAR(100) NOT NULL,
+    site VARCHAR(100),
+    filhos INT,
+    salario FLOAT
+    )
+2021-03-25T20:10:16.951997Z	    2 Quit	
+2021-03-25T20:10:25.194751Z	    3 Connect	root@172.20.0.1 on  using TCP/IP
+2021-03-25T20:10:25.207297Z	    3 Query	show databases
+2021-03-25T20:10:25.207842Z	    4 Connect	root@172.20.0.1 on  using TCP/IP
+2021-03-25T20:10:25.208452Z	    4 Query	show databases
+2021-03-25T20:10:25.222252Z	    4 Query	use `curso_php`
+2021-03-25T20:10:25.223666Z	    4 Query	SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'curso_php' and TABLE_TYPE<>'VIEW' order by table_name
+2021-03-25T20:10:25.227724Z	    4 Query	SELECT COLUMN_NAME name,DATA_TYPE simpleType,COLUMN_TYPE type,COLUMN_COMMENT comment,COLUMN_KEY `key`,IS_NULLABLE nullable,CHARACTER_MAXIMUM_LENGTH maxLength,COLUMN_DEFAULT defaultValue,EXTRA extra FROM information_schema.columns WHERE table_schema = 'curso_php' AND table_name = 'cadastro' ORDER BY ORDINAL_POSITION
+2021-03-25T20:10:29.348046Z	    4 Query	select 1
+2021-03-25T20:10:29.349535Z	    4 Query	show databases
+2021-03-25T20:10:29.350750Z	    4 Query	show databases
+2021-03-25T20:10:29.359770Z	    4 Query	use `curso_php`
+2021-03-25T20:10:29.360398Z	    4 Query	SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'curso_php' and TABLE_TYPE<>'VIEW' order by table_name
+2021-03-25T20:10:29.362651Z	    4 Query	SELECT COLUMN_NAME name,DATA_TYPE simpleType,COLUMN_TYPE type,COLUMN_COMMENT comment,COLUMN_KEY `key`,IS_NULLABLE nullable,CHARACTER_MAXIMUM_LENGTH maxLength,COLUMN_DEFAULT defaultValue,EXTRA extra FROM information_schema.columns WHERE table_schema = 'curso_php' AND table_name = 'cadastro' ORDER BY ORDINAL_POSITION
+2021-03-25T20:18:30.967791Z	    4 Query	SELECT TABLE_NAME name FROM information_schema.VIEWS  WHERE TABLE_SCHEMA = 'curso_php'
+2021-03-25T20:19:01.240047Z	    4 Query	select * from cadastro
+2021-03-25T20:19:39.531721Z	    4 Query	select * from cadastro
+2021-03-25T20:21:57.326959Z	    5 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-03-25T20:21:57.327566Z	    5 Query	INSERT INTO cadastro
+        (nome, nascimento, email, sitee, filhos, salario)
+        VALUES (
+            'Marieta',
+            '1989-19-29',
+            'marieta123@gmail.com.br',
+            'https://marieta123.sites.com.br',
+            2,
+            1300.87
+            )
+2021-03-25T20:21:57.333026Z	    5 Quit	
+2021-03-25T20:22:06.735127Z	    6 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-03-25T20:22:06.735321Z	    6 Query	INSERT INTO cadastro
+        (nome, nascimento, email, site, filhos, salario)
+        VALUES (
+            'Marieta',
+            '1989-19-29',
+            'marieta123@gmail.com.br',
+            'https://marieta123.sites.com.br',
+            2,
+            1300.87
+            )
+2021-03-25T20:22:06.735596Z	    6 Quit	
+2021-03-25T20:22:24.014429Z	    7 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-03-25T20:22:24.014727Z	    7 Query	INSERT INTO cadastro
+        (nome, nascimento, email, site, filhos, salario)
+        VALUES (
+            'Marieta',
+            '1989-10-29',
+            'marieta123@gmail.com.br',
+            'https://marieta123.sites.com.br',
+            2,
+            1300.87
+            )
+2021-03-25T20:22:24.017103Z	    7 Quit	
+2021-03-25T20:22:28.233751Z	    4 Query	select * from cadastro
+2021-03-25T20:23:21.449227Z	    8 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-03-25T20:23:21.449772Z	    8 Query	INSERT INTO cadastro
+        (nome, nascimento, email, site, filhos, salario)
+        VALUES (
+            'João',
+            '1995-10-09',
+            'joao123@gmail.com.br',
+            'https://joao123.sites.com.br',
+            5,
+            3000.87
+            )
+2021-03-25T20:23:21.457774Z	    8 Quit	
+2021-03-25T20:23:26.576728Z	    4 Query	select * from cadastro
+2021-03-25T20:24:57.977576Z	    9 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-03-25T20:24:57.977780Z	    9 Query	INSERT INTO cadastro
+        (nome, nascimento, email, site, filhos, salario)
+        VALUES (
+            'Pedro Henrique',
+            '1992-10-09',
+            'pedroph@gmail.com.br',
+            'https://ph.sites.com.br',
+            0,
+            6000.87
+            )
+2021-03-25T20:24:57.984294Z	    9 Quit	
+2021-03-25T20:25:02.316003Z	    4 Query	select * from cadastro
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+2021-04-03T15:28:41.025214Z	    2 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T15:28:41.030018Z	    2 Query	SELECT * FROM cadastro
+2021-04-03T15:28:41.039575Z	    2 Quit	
+2021-04-03T15:32:36.143957Z	    3 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T15:32:36.144463Z	    3 Query	SELECT * FROM cadastro
+2021-04-03T15:32:36.145308Z	    3 Quit	
+2021-04-03T15:33:25.605281Z	    4 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T15:33:25.605552Z	    4 Query	SELECT * FROM cadastro
+2021-04-03T15:33:25.606094Z	    4 Quit	
+2021-04-03T15:33:40.334617Z	    5 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T15:33:40.335095Z	    5 Query	SELECT * FROM cadastro
+2021-04-03T15:33:40.335869Z	    5 Quit	
+2021-04-03T15:34:37.573795Z	    6 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T15:34:37.574267Z	    6 Query	SELECT * FROM cadastro
+2021-04-03T15:34:37.574996Z	    6 Quit	
+2021-04-03T15:35:03.846330Z	    7 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T15:35:03.846816Z	    7 Query	SELECT * FROM cadastro
+2021-04-03T15:35:03.847401Z	    7 Quit	
+2021-04-03T15:36:15.667942Z	    8 Connect	root@172.20.0.1 on  using TCP/IP
+2021-04-03T15:36:15.667963Z	    9 Connect	root@172.20.0.1 on  using TCP/IP
+2021-04-03T15:36:15.669611Z	    9 Query	show databases
+2021-04-03T15:36:15.669611Z	    8 Query	show databases
+2021-04-03T15:36:15.681088Z	    9 Query	use `curso_php`
+2021-04-03T15:36:15.682885Z	    9 Query	SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'curso_php' and TABLE_TYPE<>'VIEW' order by table_name
+2021-04-03T15:36:15.688298Z	    9 Query	SELECT COLUMN_NAME name,DATA_TYPE simpleType,COLUMN_TYPE type,COLUMN_COMMENT comment,COLUMN_KEY `key`,IS_NULLABLE nullable,CHARACTER_MAXIMUM_LENGTH maxLength,COLUMN_DEFAULT defaultValue,EXTRA extra FROM information_schema.columns WHERE table_schema = 'curso_php' AND table_name = 'cadastro' ORDER BY ORDINAL_POSITION
+2021-04-03T15:36:37.381640Z	   10 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T15:36:37.382141Z	   10 Query	SELECT id, nome, nascimento, email  FROM cadastro
+2021-04-03T15:36:37.382773Z	   10 Quit	
+2021-04-03T15:38:51.114645Z	   11 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T15:38:51.115038Z	   11 Query	SELECT id, nome, nascimento, email  FROM cadastro
+2021-04-03T15:38:51.115516Z	   11 Quit	
+2021-04-03T15:38:57.860072Z	   12 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T15:38:57.860252Z	   12 Query	SELECT id, nome, nascimento, email  FROM cadastro
+2021-04-03T15:38:57.860502Z	   12 Quit	
+2021-04-03T15:40:19.614515Z	   13 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T15:40:19.615001Z	   13 Query	SELECT id, nome, nascimento, email  FROM cadastro
+2021-04-03T15:40:19.615628Z	   13 Quit	
+2021-04-03T15:41:17.155113Z	   14 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T15:41:17.155313Z	   14 Query	SELECT id, nome, nascimento, email  FROM cadastro
+2021-04-03T15:41:17.155575Z	   14 Quit	
+2021-04-03T15:41:28.056452Z	   15 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T15:41:28.056862Z	   15 Query	SELECT id, nome, nascimento, email  FROM cadastro
+2021-04-03T15:41:28.057506Z	   15 Quit	
+2021-04-03T15:42:09.949021Z	   16 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T15:42:09.949330Z	   16 Query	SELECT id, nome, nascimento, email  FROM cadastro
+2021-04-03T15:42:09.949726Z	   16 Quit	
+2021-04-03T16:38:25.293673Z	    9 Query	SELECT TABLE_NAME name FROM information_schema.VIEWS  WHERE TABLE_SCHEMA = 'curso_php'
+2021-04-03T16:38:32.329118Z	    9 Query	SELECT * FROM cadastro LIMIT 100
+2021-04-03T16:38:39.818307Z	   17 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:38:39.818955Z	   17 Query	DELETE FROM cadastro WHERE id = 3
+2021-04-03T16:38:39.834134Z	   17 Quit	
+2021-04-03T16:38:52.706527Z	    9 Query	SELECT * FROM cadastro LIMIT 100
+2021-04-03T16:38:52.707754Z	    9 Query	SELECT * FROM cadastro LIMIT 100
+2021-04-03T16:48:14.164737Z	   18 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:48:14.165172Z	   18 Query	SELECT * FROM cadastro
+2021-04-03T16:48:14.165851Z	   18 Quit	
+2021-04-03T16:48:21.235979Z	   19 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:48:21.237715Z	   19 Query	INSERT INTO cadastro
+        (nome, nascimento, email, site, filhos, salario)
+        VALUES (
+            'Pedro Henrique',
+            '1992-10-09',
+            'pedroph@gmail.com.br',
+            'https://ph.sites.com.br',
+            0,
+            6000.87
+            )
+2021-04-03T16:48:21.243163Z	   19 Quit	
+2021-04-03T16:48:25.899192Z	   20 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:48:25.899658Z	   20 Query	SELECT * FROM cadastro
+2021-04-03T16:48:25.900362Z	   20 Quit	
+2021-04-03T16:50:53.996024Z	   21 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:50:53.996433Z	   21 Query	SELECT * FROM cadastro
+2021-04-03T16:50:54.002583Z	   21 Quit	
+2021-04-03T16:52:40.665759Z	   22 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:52:40.666196Z	   22 Query	SELECT * FROM cadastro
+2021-04-03T16:52:40.666911Z	   22 Quit	
+2021-04-03T16:52:49.883261Z	   23 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:52:49.883721Z	   23 Query	SELECT * FROM cadastro
+2021-04-03T16:52:49.884459Z	   23 Quit	
+2021-04-03T16:52:50.459312Z	   24 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:52:50.459653Z	   24 Query	SELECT * FROM cadastro
+2021-04-03T16:52:50.460311Z	   24 Quit	
+2021-04-03T16:52:58.586352Z	   25 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:52:58.586756Z	   25 Query	SELECT * FROM cadastro
+2021-04-03T16:52:58.587365Z	   25 Quit	
+2021-04-03T16:52:58.945453Z	   26 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:52:58.945759Z	   26 Query	SELECT * FROM cadastro
+2021-04-03T16:52:58.946354Z	   26 Quit	
+2021-04-03T16:52:59.162553Z	   27 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:52:59.162989Z	   27 Query	SELECT * FROM cadastro
+2021-04-03T16:52:59.163725Z	   27 Quit	
+2021-04-03T16:53:40.611845Z	   28 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:53:40.612313Z	   28 Query	SELECT * FROM cadastro
+2021-04-03T16:53:40.613018Z	   28 Quit	
+2021-04-03T16:54:00.857847Z	   29 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:54:00.858326Z	   29 Query	SELECT * FROM cadastro
+2021-04-03T16:54:00.858953Z	   29 Quit	
+2021-04-03T16:54:11.195992Z	   30 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:54:11.196417Z	   30 Query	SELECT * FROM cadastro
+2021-04-03T16:54:11.197317Z	   30 Quit	
+2021-04-03T16:54:29.371187Z	   31 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:54:29.371660Z	   31 Query	SELECT * FROM cadastro
+2021-04-03T16:54:29.372313Z	   31 Quit	
+2021-04-03T16:55:56.594028Z	   32 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:55:56.594469Z	   32 Query	SELECT * FROM cadastro
+2021-04-03T16:55:56.595098Z	   32 Quit	
+2021-04-03T16:55:57.124242Z	   33 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:55:57.124398Z	   33 Query	SELECT * FROM cadastro
+2021-04-03T16:55:57.124802Z	   33 Quit	
+2021-04-03T16:56:35.761712Z	   34 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:56:35.762064Z	   34 Query	SELECT * FROM cadastro
+2021-04-03T16:56:35.762736Z	   34 Quit	
+2021-04-03T16:56:36.178207Z	   35 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:56:36.178546Z	   35 Query	SELECT * FROM cadastro
+2021-04-03T16:56:36.179112Z	   35 Quit	
+2021-04-03T16:56:51.090407Z	   36 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:56:51.090771Z	   36 Query	SELECT * FROM cadastro
+2021-04-03T16:56:51.091872Z	   36 Quit	
+2021-04-03T16:57:41.287059Z	   37 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:57:41.287218Z	   37 Query	SELECT * FROM cadastro
+2021-04-03T16:57:41.287448Z	   37 Quit	
+2021-04-03T16:57:41.969862Z	   38 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:57:41.970011Z	   38 Query	SELECT * FROM cadastro
+2021-04-03T16:57:41.970208Z	   38 Quit	
+2021-04-03T16:58:33.871874Z	   39 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:58:33.872134Z	   39 Query	SELECT * FROM cadastro
+2021-04-03T16:58:33.872425Z	   39 Quit	
+2021-04-03T16:58:34.478888Z	   40 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:58:34.479086Z	   40 Query	SELECT * FROM cadastro
+2021-04-03T16:58:34.479335Z	   40 Quit	
+2021-04-03T16:58:39.057314Z	   41 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:58:39.057677Z	   41 Query	SELECT * FROM cadastro
+2021-04-03T16:58:39.058157Z	   41 Quit	
+2021-04-03T16:58:59.750248Z	   42 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:58:59.750463Z	   42 Query	SELECT id, nome, nascimento, email  FROM cadastro
+2021-04-03T16:58:59.750685Z	   42 Quit	
+2021-04-03T16:59:04.342013Z	   43 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:59:04.342383Z	   43 Query	SELECT * FROM cadastro
+2021-04-03T16:59:04.342927Z	   43 Quit	
+2021-04-03T16:59:39.874189Z	   44 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T16:59:39.874646Z	   44 Query	SELECT * FROM cadastro
+2021-04-03T16:59:39.875236Z	   44 Quit	
+2021-04-03T17:00:12.034668Z	   45 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T17:00:12.035115Z	   45 Query	SELECT * FROM cadastro
+2021-04-03T17:00:12.035625Z	   45 Quit	
+2021-04-03T17:00:31.350832Z	   46 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T17:00:31.351007Z	   46 Query	SELECT * FROM cadastro
+2021-04-03T17:00:31.351241Z	   46 Quit	
+2021-04-03T17:00:32.579393Z	   47 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T17:00:32.579566Z	   47 Query	SELECT * FROM cadastro
+2021-04-03T17:00:32.579809Z	   47 Quit	
+2021-04-03T17:00:54.867379Z	   48 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T17:00:54.867778Z	   48 Query	SELECT * FROM cadastro
+2021-04-03T17:00:54.868370Z	   48 Quit	
+2021-04-03T17:01:07.218976Z	   49 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T17:01:07.219449Z	   49 Query	SELECT * FROM cadastro
+2021-04-03T17:01:07.220026Z	   49 Quit	
+2021-04-03T17:01:23.309273Z	   50 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T17:01:23.309704Z	   50 Query	SELECT * FROM cadastro
+2021-04-03T17:01:23.310288Z	   50 Quit	
+2021-04-03T17:01:57.455562Z	   51 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T17:01:57.460633Z	   51 Query	SELECT * FROM cadastro
+2021-04-03T17:01:57.461176Z	   51 Quit	
+2021-04-03T17:02:10.618780Z	   52 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T17:02:10.619223Z	   52 Query	SELECT * FROM cadastro
+2021-04-03T17:02:10.619834Z	   52 Quit	
+2021-04-03T17:03:57.688607Z	   53 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T17:03:57.688923Z	   53 Query	SELECT * FROM cadastro
+2021-04-03T17:03:57.689377Z	   53 Quit	
+2021-04-03T17:04:49.355995Z	   54 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T17:04:49.356318Z	   54 Query	SELECT * FROM cadastro
+2021-04-03T17:04:49.361319Z	   54 Quit	
+2021-04-03T17:06:29.749294Z	   55 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T17:06:29.749726Z	   55 Query	SELECT * FROM cadastro
+2021-04-03T17:06:29.750321Z	   55 Quit	
+2021-04-03T17:06:34.473556Z	   56 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T17:06:34.473964Z	   56 Query	SELECT * FROM cadastro
+2021-04-03T17:06:34.474464Z	   56 Quit	
+2021-04-03T17:06:36.483513Z	   57 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T17:06:36.483708Z	   57 Query	SELECT * FROM cadastro
+2021-04-03T17:06:36.483975Z	   57 Quit	
+2021-04-03T17:06:38.181519Z	   58 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T17:06:38.181904Z	   58 Query	SELECT * FROM cadastro
+2021-04-03T17:06:38.182296Z	   58 Quit	
+2021-04-03T17:08:31.947340Z	   59 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T17:08:31.947772Z	   59 Query	SELECT * FROM cadastro
+2021-04-03T17:08:31.948377Z	   59 Quit	
+2021-04-03T17:08:36.031535Z	   60 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T17:08:36.031957Z	   60 Query	SELECT * FROM cadastro
+2021-04-03T17:08:36.033419Z	   60 Quit	
+2021-04-03T17:08:39.363330Z	   61 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T17:08:39.363692Z	   61 Query	SELECT * FROM cadastro
+2021-04-03T17:08:39.364230Z	   61 Quit	
+2021-04-03T17:10:42.322742Z	   62 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T17:10:42.323185Z	   62 Query	SELECT * FROM cadastro
+2021-04-03T17:10:42.332175Z	   62 Prepare	DELETE FROM cadastro WHERE id = ?
+2021-04-03T17:10:42.334599Z	   62 Execute	DELETE FROM cadastro WHERE id = 4
+2021-04-03T17:10:42.338491Z	   62 Quit	
+2021-04-03T17:10:44.119860Z	   63 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T17:10:44.120252Z	   63 Query	SELECT * FROM cadastro
+2021-04-03T17:10:44.120971Z	   63 Prepare	DELETE FROM cadastro WHERE id = ?
+2021-04-03T17:10:44.121062Z	   63 Execute	DELETE FROM cadastro WHERE id = 4
+2021-04-03T17:10:44.121372Z	   63 Quit	
+2021-04-03T18:04:58.916684Z	   64 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:04:58.926303Z	   64 Prepare	INSERT INTO cadastro (nome, nascimento, email, site, filhos, salario)
+        VALUES (?, ?, ?, ?, ?, ?)
+2021-04-03T18:04:58.927258Z	   64 Execute	INSERT INTO cadastro (nome, nascimento, email, site, filhos, salario)
+        VALUES ('Rafael', '1982-05-08', 'rafael@rafael.com', 'https://rafael.com.br', 10, 5000)
+2021-04-03T18:04:58.940127Z	   64 Close stmt	
+2021-04-03T18:04:58.940232Z	   64 Quit	
+2021-04-03T18:05:09.750422Z	    9 Query	SELECT * FROM cadastro LIMIT 100
+2021-04-03T18:05:11.013509Z	    9 Query	SELECT * FROM cadastro LIMIT 100
+2021-04-03T18:05:54.522643Z	   65 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:05:54.523554Z	   65 Prepare	INSERT INTO cadastro (nome, nascimento, email, site, filhos, salario)
+        VALUES (?, ?, ?, ?, ?, ?)
+2021-04-03T18:05:54.523807Z	   65 Execute	INSERT INTO cadastro (nome, nascimento, email, site, filhos, salario)
+        VALUES ('Rafael', '1982-05-08', 'rafael@rafael.com', 'https://rafael.com.br', 10, 5000)
+2021-04-03T18:05:54.527303Z	   65 Close stmt	
+2021-04-03T18:05:54.527383Z	   65 Quit	
+2021-04-03T18:05:57.490025Z	    9 Query	SELECT * FROM cadastro LIMIT 100
+2021-04-03T18:05:57.491410Z	    9 Query	SELECT * FROM cadastro LIMIT 100
+2021-04-03T18:06:51.353662Z	   66 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:06:51.353930Z	   66 Prepare	INSERT INTO cadastro (nome, nascimento, email, site, filhos, salario)
+        VALUES (?, ?, ?, ?, ?, ?)
+2021-04-03T18:06:51.353991Z	   66 Execute	INSERT INTO cadastro (nome, nascimento, email, site, filhos, salario)
+        VALUES ('Diego', '1982-05-08', 'diego@diego.com', 'https://diego.com.br', 2, 1500)
+2021-04-03T18:06:51.357864Z	   66 Execute	INSERT INTO cadastro (nome, nascimento, email, site, filhos, salario)
+        VALUES ('Diego', '1982-05-08', 'diego@diego.com', 'https://diego.com.br', 2, 1500)
+2021-04-03T18:06:51.360516Z	   66 Close stmt	
+2021-04-03T18:06:51.360565Z	   66 Quit	
+2021-04-03T18:06:57.566331Z	    9 Query	SELECT * FROM cadastro LIMIT 100
+2021-04-03T18:08:35.946880Z	   67 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:08:35.947212Z	   67 Prepare	INSERT INTO cadastro (nome, nascimento, email, site, filhos, salario)
+        VALUES (?, ?, ?, ?, ?, ?)
+2021-04-03T18:08:35.948205Z	   67 Execute	INSERT INTO cadastro (nome, nascimento, email, site, filhos, salario)
+        VALUES ('Cesar', NULL, 'cesar@ig.com.br', 'https://cesarcielo.com', 0, 800)
+2021-04-03T18:08:35.950574Z	   67 Close stmt	
+2021-04-03T18:08:35.950639Z	   67 Quit	
+2021-04-03T18:08:39.695569Z	    9 Query	SELECT * FROM cadastro LIMIT 100
+2021-04-03T18:08:55.075258Z	   68 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:08:55.075690Z	   68 Query	SELECT * FROM cadastro
+2021-04-03T18:08:55.076319Z	   68 Quit	
+2021-04-03T18:09:00.619186Z	   69 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:09:00.619592Z	   69 Query	SELECT * FROM cadastro
+2021-04-03T18:09:00.628053Z	   69 Prepare	DELETE FROM cadastro WHERE id = ?
+2021-04-03T18:09:00.628149Z	   69 Execute	DELETE FROM cadastro WHERE id = 8
+2021-04-03T18:09:00.631337Z	   69 Quit	
+2021-04-03T18:09:06.053061Z	   70 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:09:06.053467Z	   70 Query	SELECT * FROM cadastro
+2021-04-03T18:09:06.054164Z	   70 Prepare	DELETE FROM cadastro WHERE id = ?
+2021-04-03T18:09:06.054289Z	   70 Execute	DELETE FROM cadastro WHERE id = 8
+2021-04-03T18:09:06.054659Z	   70 Quit	
+2021-04-03T18:09:14.179104Z	   71 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:09:14.179626Z	   71 Query	SELECT * FROM cadastro
+2021-04-03T18:09:14.180620Z	   71 Prepare	DELETE FROM cadastro WHERE id = ?
+2021-04-03T18:09:14.180779Z	   71 Execute	DELETE FROM cadastro WHERE id = 5
+2021-04-03T18:09:14.197465Z	   71 Quit	
+2021-04-03T18:09:21.087090Z	   72 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:09:21.087358Z	   72 Query	SELECT * FROM cadastro
+2021-04-03T18:09:21.087811Z	   72 Prepare	DELETE FROM cadastro WHERE id = ?
+2021-04-03T18:09:21.087873Z	   72 Execute	DELETE FROM cadastro WHERE id = 5
+2021-04-03T18:09:21.088072Z	   72 Quit	
+2021-04-03T18:22:41.441885Z	   73 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:22:41.442680Z	   73 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T18:22:41.442777Z	   73 Execute	SELECT * FROM cadastro WHERE id = 1
+2021-04-03T18:22:41.454684Z	   73 Close stmt	
+2021-04-03T18:22:41.454760Z	   73 Quit	
+2021-04-03T18:23:37.480621Z	   74 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:23:37.480952Z	   74 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T18:23:37.481025Z	   74 Execute	SELECT * FROM cadastro WHERE id = 2
+2021-04-03T18:23:37.481312Z	   74 Close stmt	
+2021-04-03T18:23:37.481334Z	   74 Quit	
+2021-04-03T18:28:15.067699Z	   75 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:28:15.068313Z	   75 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T18:28:15.068389Z	   75 Execute	SELECT * FROM cadastro WHERE id = 2
+2021-04-03T18:28:15.069070Z	   75 Close stmt	
+2021-04-03T18:28:15.069345Z	   75 Quit	
+2021-04-03T18:29:06.102331Z	   76 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:29:06.102873Z	   76 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T18:29:06.103009Z	   76 Execute	SELECT * FROM cadastro WHERE id = 2
+2021-04-03T18:29:06.103597Z	   76 Close stmt	
+2021-04-03T18:29:06.103638Z	   76 Quit	
+2021-04-03T18:29:41.986346Z	   77 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:29:41.987028Z	   77 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T18:29:41.987162Z	   77 Execute	SELECT * FROM cadastro WHERE id = 2
+2021-04-03T18:29:41.987791Z	   77 Close stmt	
+2021-04-03T18:29:41.987844Z	   77 Quit	
+2021-04-03T18:30:25.194890Z	   78 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:30:25.195991Z	   78 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T18:30:25.196147Z	   78 Execute	SELECT * FROM cadastro WHERE id = 2
+2021-04-03T18:30:25.197155Z	   78 Close stmt	
+2021-04-03T18:30:25.197231Z	   78 Quit	
+2021-04-03T18:30:45.977032Z	   79 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:30:45.977590Z	   79 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T18:30:45.977673Z	   79 Execute	SELECT * FROM cadastro WHERE id = 2
+2021-04-03T18:30:45.978841Z	   79 Close stmt	
+2021-04-03T18:30:45.978911Z	   79 Quit	
+2021-04-03T18:30:56.019530Z	   80 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:30:56.020047Z	   80 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T18:30:56.020158Z	   80 Execute	SELECT * FROM cadastro WHERE id = 2
+2021-04-03T18:30:56.020886Z	   80 Close stmt	
+2021-04-03T18:30:56.020930Z	   80 Quit	
+2021-04-03T18:31:01.492118Z	   81 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:31:01.492895Z	   81 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T18:31:01.493071Z	   81 Execute	SELECT * FROM cadastro WHERE id = 2
+2021-04-03T18:31:01.493881Z	   81 Close stmt	
+2021-04-03T18:31:01.493958Z	   81 Quit	
+2021-04-03T18:31:06.219380Z	   82 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:31:06.220029Z	   82 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T18:31:06.220186Z	   82 Execute	SELECT * FROM cadastro WHERE id = 2
+2021-04-03T18:31:06.221329Z	   82 Close stmt	
+2021-04-03T18:31:06.221376Z	   82 Quit	
+2021-04-03T18:32:43.440696Z	   83 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:32:43.441117Z	   83 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T18:32:43.441271Z	   83 Execute	SELECT * FROM cadastro WHERE id = 2
+2021-04-03T18:32:43.441748Z	   83 Close stmt	
+2021-04-03T18:32:43.441788Z	   83 Quit	
+2021-04-03T18:32:59.147957Z	   84 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:32:59.148659Z	   84 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T18:32:59.148807Z	   84 Execute	SELECT * FROM cadastro WHERE id = 2
+2021-04-03T18:32:59.149545Z	   84 Close stmt	
+2021-04-03T18:32:59.149614Z	   84 Quit	
+2021-04-03T18:32:59.699938Z	   85 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:32:59.700947Z	   85 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T18:32:59.701206Z	   85 Execute	SELECT * FROM cadastro WHERE id = 2
+2021-04-03T18:32:59.701954Z	   85 Close stmt	
+2021-04-03T18:32:59.702015Z	   85 Quit	
+2021-04-03T18:33:00.375715Z	   86 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:33:00.376309Z	   86 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T18:33:00.376382Z	   86 Execute	SELECT * FROM cadastro WHERE id = 2
+2021-04-03T18:33:00.377052Z	   86 Close stmt	
+2021-04-03T18:33:00.377130Z	   86 Quit	
+2021-04-03T18:33:03.262297Z	   87 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:33:03.262643Z	   87 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T18:33:03.262725Z	   87 Execute	SELECT * FROM cadastro WHERE id = 1
+2021-04-03T18:33:03.263097Z	   87 Close stmt	
+2021-04-03T18:33:03.263130Z	   87 Quit	
+2021-04-03T18:33:06.837584Z	   88 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T18:33:06.837821Z	   88 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T18:33:06.837863Z	   88 Execute	SELECT * FROM cadastro WHERE id = 7
+2021-04-03T18:33:06.838147Z	   88 Close stmt	
+2021-04-03T18:33:06.838164Z	   88 Quit	
+2021-04-03T19:33:06.333583Z	   89 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:33:06.347047Z	   89 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:33:06.347187Z	   89 Execute	SELECT * FROM cadastro WHERE id = 7
+2021-04-03T19:33:06.367047Z	   89 Close stmt	
+2021-04-03T19:33:06.367133Z	   89 Quit	
+2021-04-03T19:33:13.834059Z	   90 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:33:13.834796Z	   90 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:33:13.834949Z	   90 Execute	SELECT * FROM cadastro WHERE id = 7
+2021-04-03T19:33:13.835738Z	   90 Close stmt	
+2021-04-03T19:33:13.835798Z	   90 Quit	
+2021-04-03T19:33:31.874359Z	   91 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:33:31.875103Z	   91 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:33:31.875199Z	   91 Execute	SELECT * FROM cadastro WHERE id = 7
+2021-04-03T19:33:31.876153Z	   91 Close stmt	
+2021-04-03T19:33:31.876214Z	   91 Quit	
+2021-04-03T19:33:50.065946Z	   92 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:33:50.066625Z	   92 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:33:50.066764Z	   92 Execute	SELECT * FROM cadastro WHERE id = 7
+2021-04-03T19:33:50.067485Z	   92 Close stmt	
+2021-04-03T19:33:50.067548Z	   92 Quit	
+2021-04-03T19:33:54.698640Z	   93 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:33:54.698950Z	   93 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:33:54.699019Z	   93 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:33:54.699313Z	   93 Close stmt	
+2021-04-03T19:33:54.699336Z	   93 Quit	
+2021-04-03T19:33:57.125173Z	   94 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:33:57.125535Z	   94 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:33:57.125605Z	   94 Execute	SELECT * FROM cadastro WHERE id = 5
+2021-04-03T19:33:57.126208Z	   94 Close stmt	
+2021-04-03T19:33:57.126237Z	   94 Quit	
+2021-04-03T19:33:59.031439Z	   95 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:33:59.031897Z	   95 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:33:59.032006Z	   95 Execute	SELECT * FROM cadastro WHERE id = 4
+2021-04-03T19:33:59.032430Z	   95 Close stmt	
+2021-04-03T19:33:59.032472Z	   95 Quit	
+2021-04-03T19:34:02.090262Z	   96 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:34:02.090587Z	   96 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:34:02.090691Z	   96 Execute	SELECT * FROM cadastro WHERE id = 3
+2021-04-03T19:34:02.090974Z	   96 Close stmt	
+2021-04-03T19:34:02.091007Z	   96 Quit	
+2021-04-03T19:34:04.742942Z	   97 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:34:04.743245Z	   97 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:34:04.743281Z	   97 Execute	SELECT * FROM cadastro WHERE id = 5
+2021-04-03T19:34:04.743527Z	   97 Close stmt	
+2021-04-03T19:34:04.743547Z	   97 Quit	
+2021-04-03T19:34:06.499824Z	   98 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:34:06.500190Z	   98 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:34:06.500239Z	   98 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:34:06.500531Z	   98 Close stmt	
+2021-04-03T19:34:06.500561Z	   98 Quit	
+2021-04-03T19:36:29.445514Z	   99 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:36:29.446253Z	   99 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:36:29.446415Z	   99 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:36:29.447187Z	   99 Close stmt	
+2021-04-03T19:36:29.447261Z	   99 Quit	
+2021-04-03T19:36:37.843416Z	  100 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:36:37.844200Z	  100 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:36:37.844295Z	  100 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:36:37.846464Z	  100 Prepare	UPDATE cadastro SET nome = ?, email = ?, site = ?, filhos = ?, salario = ? WHERE id = ?
+2021-04-03T19:36:37.846561Z	  100 Close stmt	
+2021-04-03T19:36:37.850014Z	  100 Close stmt	
+2021-04-03T19:36:37.850091Z	  100 Quit	
+2021-04-03T19:41:34.162308Z	  101 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:41:34.163084Z	  101 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:41:34.163264Z	  101 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:41:34.163843Z	  101 Close stmt	
+2021-04-03T19:41:34.163887Z	  101 Quit	
+2021-04-03T19:41:38.872804Z	  102 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:41:38.873130Z	  102 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:41:38.873187Z	  102 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:41:38.873505Z	  102 Prepare	UPDATE cadastro SET 
+        nome = ?, email = ?, site = ?, filhos = ?, salario = ? 
+        WHERE id = ?
+2021-04-03T19:41:38.873575Z	  102 Close stmt	
+2021-04-03T19:41:38.873745Z	  102 Close stmt	
+2021-04-03T19:41:38.873774Z	  102 Quit	
+2021-04-03T19:42:15.404246Z	  103 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:42:15.404941Z	  103 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:42:15.405144Z	  103 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:42:15.406874Z	  103 Prepare	UPDATE cadastro SET 
+        nome = ?, email = ?, site = ?, filhos = ?, salario = ? 
+        WHERE id = ?
+2021-04-03T19:42:15.410713Z	  103 Close stmt	
+2021-04-03T19:42:15.410822Z	  103 Close stmt	
+2021-04-03T19:42:15.410850Z	  103 Quit	
+2021-04-03T19:42:16.987412Z	  104 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:42:16.988060Z	  104 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:42:16.988206Z	  104 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:42:16.988852Z	  104 Close stmt	
+2021-04-03T19:42:16.988910Z	  104 Quit	
+2021-04-03T19:42:18.344374Z	  105 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:42:18.344678Z	  105 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:42:18.344748Z	  105 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:42:18.345095Z	  105 Close stmt	
+2021-04-03T19:42:18.345136Z	  105 Quit	
+2021-04-03T19:42:20.328916Z	  106 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:42:20.329530Z	  106 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:42:20.329709Z	  106 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:42:20.330395Z	  106 Close stmt	
+2021-04-03T19:42:20.330455Z	  106 Quit	
+2021-04-03T19:42:24.643890Z	  107 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:42:24.644188Z	  107 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:42:24.644274Z	  107 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:42:24.644643Z	  107 Prepare	UPDATE cadastro SET 
+        nome = ?, email = ?, site = ?, filhos = ?, salario = ? 
+        WHERE id = ?
+2021-04-03T19:42:24.644705Z	  107 Close stmt	
+2021-04-03T19:42:24.644863Z	  107 Close stmt	
+2021-04-03T19:42:24.644884Z	  107 Quit	
+2021-04-03T19:45:20.517090Z	  108 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:45:20.517674Z	  108 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:45:20.517998Z	  108 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:45:20.518807Z	  108 Prepare	UPDATE cadastro SET 
+        nome = ?, email = ?, site = ?, filhos = ?, salario = ? 
+        WHERE id = ?
+2021-04-03T19:45:20.518897Z	  108 Close stmt	
+2021-04-03T19:45:20.519255Z	  108 Close stmt	
+2021-04-03T19:45:20.519330Z	  108 Quit	
+2021-04-03T19:45:22.726370Z	  109 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:45:22.727099Z	  109 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:45:22.727242Z	  109 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:45:22.728125Z	  109 Prepare	UPDATE cadastro SET 
+        nome = ?, email = ?, site = ?, filhos = ?, salario = ? 
+        WHERE id = ?
+2021-04-03T19:45:22.728207Z	  109 Close stmt	
+2021-04-03T19:45:22.728713Z	  109 Close stmt	
+2021-04-03T19:45:22.728792Z	  109 Quit	
+2021-04-03T19:45:24.310473Z	  110 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:45:24.311059Z	  110 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:45:24.311290Z	  110 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:45:24.311995Z	  110 Close stmt	
+2021-04-03T19:45:24.312058Z	  110 Quit	
+2021-04-03T19:45:30.302717Z	  111 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:45:30.303016Z	  111 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:45:30.303118Z	  111 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:45:30.303429Z	  111 Prepare	UPDATE cadastro SET 
+        nome = ?, email = ?, site = ?, filhos = ?, salario = ? 
+        WHERE id = ?
+2021-04-03T19:45:30.303491Z	  111 Close stmt	
+2021-04-03T19:45:30.303615Z	  111 Close stmt	
+2021-04-03T19:45:30.303636Z	  111 Quit	
+2021-04-03T19:50:32.076009Z	  112 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:50:32.076599Z	  112 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:50:32.076743Z	  112 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:50:32.077636Z	  112 Prepare	UPDATE cadastro SET 
+        nome = ?, nascimento = ?, email = ?, site = ?, filhos = ?, salario = ? 
+        WHERE id = ?
+2021-04-03T19:50:32.077776Z	  112 Close stmt	
+2021-04-03T19:50:32.078499Z	  112 Execute	UPDATE cadastro SET 
+        nome = 'Rafael Loren', nascimento = '1982-05-08', email = 'rafael@rafael.com', site = 'https://rafael.com.br', filhos = 10, salario = 5000 
+        WHERE id = 6
+2021-04-03T19:50:32.086267Z	  112 Close stmt	
+2021-04-03T19:50:32.086350Z	  112 Quit	
+2021-04-03T19:50:34.727180Z	  113 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:50:34.727809Z	  113 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:50:34.727976Z	  113 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:50:34.728751Z	  113 Close stmt	
+2021-04-03T19:50:34.728805Z	  113 Quit	
+2021-04-03T19:51:00.254146Z	  114 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:51:00.254524Z	  114 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:51:00.254613Z	  114 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:51:00.255154Z	  114 Prepare	UPDATE cadastro SET 
+        nome = ?, nascimento = ?, email = ?, site = ?, filhos = ?, salario = ? 
+        WHERE id = ?
+2021-04-03T19:51:00.255202Z	  114 Close stmt	
+2021-04-03T19:51:00.255311Z	  114 Execute	UPDATE cadastro SET 
+        nome = 'Rafael Loren', nascimento = '1982-05-08', email = 'rafael@rafael.com', site = 'https://rafael.com.br', filhos = 10, salario = 7000 
+        WHERE id = 6
+2021-04-03T19:51:00.258069Z	  114 Close stmt	
+2021-04-03T19:51:00.258129Z	  114 Quit	
+2021-04-03T19:51:01.232520Z	  115 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:51:01.233314Z	  115 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:51:01.233491Z	  115 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:51:01.234460Z	  115 Close stmt	
+2021-04-03T19:51:01.234542Z	  115 Quit	
+2021-04-03T19:54:16.801602Z	  116 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:54:16.802148Z	  116 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:54:16.802273Z	  116 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:54:16.803012Z	  116 Prepare	UPDATE cadastro SET 
+        nome = ?, nascimento = ?, email = ?, site = ?, filhos = ?, salario = ? 
+        WHERE id = ?
+2021-04-03T19:54:16.803173Z	  116 Close stmt	
+2021-04-03T19:54:16.803245Z	  116 Execute	UPDATE cadastro SET 
+        nome = 'Rafael Loren', nascimento = '1982-05-08', email = 'rafael@rafael.com', site = 'https://rafael.com.br', filhos = 10, salario = 7000 
+        WHERE id = 6
+2021-04-03T19:54:16.810397Z	  116 Close stmt	
+2021-04-03T19:54:16.810490Z	  116 Quit	
+2021-04-03T19:54:19.192202Z	  117 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:54:19.192936Z	  117 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:54:19.193103Z	  117 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:54:19.193854Z	  117 Close stmt	
+2021-04-03T19:54:19.193915Z	  117 Quit	
+2021-04-03T19:54:22.764526Z	  118 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:54:22.764774Z	  118 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:54:22.764822Z	  118 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:54:22.765152Z	  118 Prepare	UPDATE cadastro SET 
+        nome = ?, nascimento = ?, email = ?, site = ?, filhos = ?, salario = ? 
+        WHERE id = ?
+2021-04-03T19:54:22.765191Z	  118 Close stmt	
+2021-04-03T19:54:22.765221Z	  118 Execute	UPDATE cadastro SET 
+        nome = 'Rafael Loren', nascimento = '1982-05-08', email = 'rafael@rafael.com', site = 'https://rafael.com.br', filhos = 10, salario = 7000 
+        WHERE id = 6
+2021-04-03T19:54:22.767988Z	  118 Close stmt	
+2021-04-03T19:54:22.768021Z	  118 Quit	
+2021-04-03T19:54:24.023450Z	  119 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:54:24.024133Z	  119 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:54:24.024380Z	  119 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:54:24.025143Z	  119 Close stmt	
+2021-04-03T19:54:24.025210Z	  119 Quit	
+2021-04-03T19:54:42.409458Z	  120 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:54:42.409722Z	  120 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:54:42.409779Z	  120 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:54:42.410138Z	  120 Close stmt	
+2021-04-03T19:54:42.410159Z	  120 Quit	
+2021-04-03T19:54:44.670795Z	  121 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:54:44.671487Z	  121 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:54:44.671703Z	  121 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:54:44.672493Z	  121 Close stmt	
+2021-04-03T19:54:44.672556Z	  121 Quit	
+2021-04-03T19:54:46.148438Z	  122 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:54:46.149124Z	  122 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:54:46.149265Z	  122 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:54:46.150390Z	  122 Close stmt	
+2021-04-03T19:54:46.150465Z	  122 Quit	
+2021-04-03T19:54:54.776195Z	  123 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:54:54.776531Z	  123 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:54:54.776602Z	  123 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:54:54.776936Z	  123 Prepare	UPDATE cadastro SET 
+        nome = ?, nascimento = ?, email = ?, site = ?, filhos = ?, salario = ? 
+        WHERE id = ?
+2021-04-03T19:54:54.776985Z	  123 Close stmt	
+2021-04-03T19:54:54.777035Z	  123 Execute	UPDATE cadastro SET 
+        nome = 'Rafael Loren', nascimento = '1982-05-08', email = 'rafael@rafael.com', site = 'https://rafael.com.br', filhos = 10, salario = 7000 
+        WHERE id = 6
+2021-04-03T19:54:54.779436Z	  123 Close stmt	
+2021-04-03T19:54:54.779471Z	  123 Quit	
+2021-04-03T19:54:55.788422Z	  124 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:54:55.789213Z	  124 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:54:55.789312Z	  124 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:54:55.790002Z	  124 Close stmt	
+2021-04-03T19:54:55.790068Z	  124 Quit	
+2021-04-03T19:55:34.320255Z	  125 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:55:34.320614Z	  125 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:55:34.320706Z	  125 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:55:34.321059Z	  125 Close stmt	
+2021-04-03T19:55:34.321082Z	  125 Quit	
+2021-04-03T19:55:35.645198Z	  126 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:55:35.645524Z	  126 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:55:35.645602Z	  126 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:55:35.645929Z	  126 Close stmt	
+2021-04-03T19:55:35.645958Z	  126 Quit	
+2021-04-03T19:55:39.641559Z	  127 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:55:39.641941Z	  127 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:55:39.642023Z	  127 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:55:39.642475Z	  127 Prepare	UPDATE cadastro SET 
+        nome = ?, nascimento = ?, email = ?, site = ?, filhos = ?, salario = ? 
+        WHERE id = ?
+2021-04-03T19:55:39.642538Z	  127 Close stmt	
+2021-04-03T19:55:39.642619Z	  127 Execute	UPDATE cadastro SET 
+        nome = 'Rafael Loren', nascimento = '1982-05-08', email = 'rafael@rafael.com', site = 'https://rafael.com.br', filhos = 10, salario = 7000.5 
+        WHERE id = 6
+2021-04-03T19:55:39.644246Z	  127 Close stmt	
+2021-04-03T19:55:39.644299Z	  127 Quit	
+2021-04-03T19:55:40.637499Z	  128 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-03T19:55:40.638219Z	  128 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-03T19:55:40.638370Z	  128 Execute	SELECT * FROM cadastro WHERE id = 6
+2021-04-03T19:55:40.639466Z	  128 Close stmt	
+2021-04-03T19:55:40.639525Z	  128 Quit	
+2021-04-03T19:55:49.144177Z	    9 Query	SELECT * FROM cadastro LIMIT 100
+mysqld, Version: 5.7.33-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+2021-04-04T19:19:35.523460Z	    2 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T19:19:35.524719Z	    2 Quit	
+2021-04-04T19:19:39.755086Z	    3 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T19:19:39.772434Z	    3 Prepare	SELECT * FROM cadastro WHERE id = ?
+2021-04-04T19:19:39.772615Z	    3 Execute	SELECT * FROM cadastro WHERE id = 2
+2021-04-04T19:19:39.774426Z	    3 Close stmt	
+2021-04-04T19:19:39.774510Z	    3 Quit	
+2021-04-04T19:22:19.777431Z	    4 Connect	root@php.menusphp_mysql-compose-network on menu_php using TCP/IP
+2021-04-04T19:22:19.779163Z	    4 Quit	
+2021-04-04T19:27:26.007792Z	    6 Connect	root@172.20.0.1 on  using TCP/IP
+2021-04-04T19:27:26.009629Z	    5 Connect	root@172.20.0.1 on  using TCP/IP
+2021-04-04T19:27:26.013495Z	    6 Query	show databases
+2021-04-04T19:27:26.014071Z	    5 Query	show databases
+2021-04-04T19:27:26.044090Z	    6 Query	use `curso_php`
+2021-04-04T19:27:26.046924Z	    6 Query	use `curso_php`
+2021-04-04T19:27:26.048509Z	    6 Query	SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'curso_php' and TABLE_TYPE<>'VIEW' order by table_name
+2021-04-04T19:27:26.054623Z	    6 Query	SELECT TABLE_NAME name FROM information_schema.VIEWS  WHERE TABLE_SCHEMA = 'curso_php'
+2021-04-04T19:27:26.062517Z	    6 Query	SELECT COLUMN_NAME name,DATA_TYPE simpleType,COLUMN_TYPE type,COLUMN_COMMENT comment,COLUMN_KEY `key`,IS_NULLABLE nullable,CHARACTER_MAXIMUM_LENGTH maxLength,COLUMN_DEFAULT defaultValue,EXTRA extra FROM information_schema.columns WHERE table_schema = 'curso_php' AND table_name = 'cadastro' ORDER BY ORDINAL_POSITION
+2021-04-04T19:27:29.496167Z	    6 Query	use `menu_php`
+2021-04-04T19:27:29.497614Z	    6 Query	SELECT table_comment `comment`,TABLE_NAME as `name`,TABLE_ROWS `rows`,auto_increment,`row_format`,data_length,index_length FROM information_schema.TABLES  WHERE TABLE_SCHEMA = 'menu_php' and TABLE_TYPE<>'VIEW' order by table_name
+2021-04-04T19:28:49.539208Z	    7 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T19:28:49.540889Z	    7 Quit	
+2021-04-04T19:28:56.170492Z	    8 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T19:28:56.170866Z	    8 Quit	
+2021-04-04T19:34:31.695984Z	    9 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T19:34:31.696320Z	    9 Quit	
+2021-04-04T19:34:31.697653Z	   10 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T19:34:31.698036Z	   10 Quit	
+2021-04-04T19:37:14.918703Z	   11 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T19:37:14.919139Z	   11 Quit	
+2021-04-04T19:37:14.920484Z	   12 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T19:37:14.921217Z	   12 Query	INSERT INTO cadastro (nome, email, nascimento, site, filhos, salario)
+VALUES ('Guilherme Filho', 'guidagalera@gmail.com', '1998-7-21', 'http://guidagalera.com.br', 0, 3000)
+2021-04-04T19:37:14.929374Z	   12 Quit	
+2021-04-04T21:06:29.903126Z	   13 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:06:29.903539Z	   13 Quit	
+2021-04-04T21:06:29.905051Z	   14 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:06:29.905481Z	   14 Query	SELECT * FROM cadastro
+2021-04-04T21:06:29.906370Z	   14 Quit	
+2021-04-04T21:06:37.676491Z	   15 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:06:37.676957Z	   15 Quit	
+2021-04-04T21:06:37.678415Z	   16 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:06:37.678761Z	   16 Query	SELECT * FROM cadastro
+2021-04-04T21:06:37.679815Z	   16 Quit	
+2021-04-04T21:07:22.750834Z	   17 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:07:22.751099Z	   17 Quit	
+2021-04-04T21:07:22.752088Z	   18 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:07:22.752332Z	   18 Query	SELECT * FROM cadastro
+2021-04-04T21:07:22.752853Z	   18 Quit	
+2021-04-04T21:16:02.733927Z	   19 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:16:02.734285Z	   19 Quit	
+2021-04-04T21:16:02.735643Z	   20 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:16:02.735960Z	   20 Query	SELECT * FROM cadastro
+2021-04-04T21:16:02.736672Z	   20 Query	SELECT * FROM cadastro LIMIT 2 OFFSET 3
+2021-04-04T21:16:02.737201Z	   20 Quit	
+2021-04-04T21:17:18.792552Z	   21 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:17:18.792950Z	   21 Quit	
+2021-04-04T21:17:18.794204Z	   22 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:17:18.794607Z	   22 Query	SELECT * FROM cadastro
+2021-04-04T21:17:18.795760Z	   22 Quit	
+2021-04-04T21:18:02.815378Z	   23 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:18:02.815798Z	   23 Quit	
+2021-04-04T21:18:02.817187Z	   24 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:18:02.817652Z	   24 Query	SELECT * FROM cadastro
+2021-04-04T21:18:02.818771Z	   24 Quit	
+2021-04-04T21:18:09.619903Z	   25 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:18:09.620361Z	   25 Quit	
+2021-04-04T21:18:09.621884Z	   26 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:18:09.622260Z	   26 Query	SELECT * FROM cadastro
+2021-04-04T21:18:09.622939Z	   26 Query	SELECT * FROM cadastro LIMIT 2 OFFSET 3
+2021-04-04T21:18:09.623495Z	   26 Quit	
+2021-04-04T21:18:19.457573Z	   27 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:18:19.458278Z	   27 Quit	
+2021-04-04T21:18:19.459133Z	   28 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:18:19.459401Z	   28 Query	SELECT * FROM cadastro
+2021-04-04T21:18:19.460491Z	   28 Quit	
+2021-04-04T21:20:40.922728Z	   29 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:20:40.922944Z	   29 Quit	
+2021-04-04T21:20:40.923478Z	   30 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:20:40.923621Z	   30 Query	SELECT * FROM cadastro
+2021-04-04T21:20:40.923888Z	   30 Query	SELECT * FROM cadastro LIMIT 2 OFFSET 3
+2021-04-04T21:20:40.924089Z	   30 Query	SELECT * FROM cadastro WHERE id = '1'
+2021-04-04T21:20:40.924361Z	   30 Quit	
+2021-04-04T21:22:25.815090Z	   31 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:22:25.815403Z	   31 Quit	
+2021-04-04T21:22:25.816728Z	   32 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:22:25.817171Z	   32 Query	SELECT * FROM cadastro
+2021-04-04T21:22:25.818133Z	   32 Query	SELECT * FROM cadastro LIMIT 2 OFFSET 3
+2021-04-04T21:22:25.818873Z	   32 Query	SELECT * FROM cadastro WHERE id = '1'
+2021-04-04T21:22:25.819964Z	   32 Quit	
+2021-04-04T21:27:20.802302Z	   33 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:27:20.802617Z	   33 Quit	
+2021-04-04T21:29:49.290817Z	    6 Query	use `curso_php`
+2021-04-04T21:29:49.296189Z	    6 Query	SELECT * FROM cadastro LIMIT 100
+2021-04-04T21:30:20.466009Z	   34 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:30:20.466126Z	   34 Quit	
+2021-04-04T21:30:20.466692Z	   35 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:30:20.466983Z	   35 Quit	
+2021-04-04T21:31:13.732740Z	   36 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:31:13.733115Z	   36 Quit	
+2021-04-04T21:31:13.734357Z	   37 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:31:13.734704Z	   37 Query	DELETE FROM cadastro WHERE id = '9'
+2021-04-04T21:31:13.743245Z	   37 Quit	
+2021-04-04T21:31:26.076756Z	    6 Query	SELECT * FROM cadastro LIMIT 100
+2021-04-04T21:31:26.078021Z	    6 Query	SELECT * FROM cadastro LIMIT 100
+2021-04-04T21:33:55.368650Z	   38 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:33:55.368950Z	   38 Quit	
+2021-04-04T21:33:55.370028Z	   39 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:33:55.370281Z	   39 Query	DELETE FROM cadastro WHERE id = '9'
+2021-04-04T21:33:55.370810Z	   39 Quit	
+2021-04-04T21:34:16.563073Z	   40 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:34:16.563496Z	   40 Quit	
+2021-04-04T21:34:16.564928Z	   41 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:34:16.565314Z	   41 Query	DELETE FROM cadastro WHERE id = '9'
+2021-04-04T21:34:16.566039Z	   41 Quit	
+2021-04-04T21:34:21.451100Z	   42 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:34:21.451523Z	   42 Quit	
+2021-04-04T21:34:21.452982Z	   43 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:34:21.453350Z	   43 Query	DELETE FROM cadastro WHERE id = '9'
+2021-04-04T21:34:21.453955Z	   43 Quit	
+2021-04-04T21:40:43.285399Z	   44 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:40:43.285783Z	   44 Quit	
+2021-04-04T21:40:43.287291Z	   45 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:40:43.287944Z	   45 Quit	
+2021-04-04T21:41:41.808118Z	    6 Query	SELECT * FROM cadastro LIMIT 100
+2021-04-04T21:41:56.398752Z	   46 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:41:56.398895Z	   46 Quit	
+2021-04-04T21:41:56.399448Z	   47 Connect	root@php.menusphp_mysql-compose-network on curso_php using TCP/IP
+2021-04-04T21:41:56.399627Z	   47 Query	UPDATE cadastro SET nome = 'Gui', nascimento = '1980-12-12', 
+email = 'gui@gui.com.br', site = 'http://gui.co', filhos = '1', salario = '12000' WHERE id = '10'
+2021-04-04T21:41:56.405865Z	   47 Quit	
+2021-04-04T21:42:00.450810Z	    6 Query	SELECT * FROM cadastro LIMIT 100
+2021-04-04T21:42:00.452066Z	    6 Query	SELECT * FROM cadastro LIMIT 100

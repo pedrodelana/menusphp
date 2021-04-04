@@ -1,6 +1,6 @@
 <?php
 
-function novaConexao($banco = 'menu_php') 
+function novaConexao($banco = 'curso_php') 
 {
     $servidor = 'mysql';
     $usuario = 'root';
@@ -18,4 +18,3 @@ function novaConexao($banco = 'menu_php')
 }
 
 novaConexao();
-echo "Fim!";
